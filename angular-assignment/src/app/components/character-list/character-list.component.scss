@@ -1,0 +1,50 @@
+.border-bottom{
+    border-bottom: 1px solid white;
+}
+.list-wrapper{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    .list-layout{
+        background: black;
+        padding: 10px;
+    }
+    .list-header{
+        position: relative;
+        .image{
+            width: 100%;
+        }
+        .list-name{
+            position: absolute;
+            background: black;
+            bottom: 0px;
+            opacity: 0.7;
+            width: 100%;
+            color: white;
+            padding: 5px;
+            .name{
+                font-size: 17px;
+            }
+            .info{
+                font-size: 12px;
+            }
+        }
+    }
+    .list-body{
+        background:#383636;
+        min-height: 500px;
+        .body-attribute{
+            padding: 10px;
+            font-size: 11px;
+            .attribute-label{
+                color: white;
+            }
+            .attribute-value{
+                color: #dfa613;
+            }
+            .attribute{
+                padding: 5px;
+            }
+        }
+    }
+}

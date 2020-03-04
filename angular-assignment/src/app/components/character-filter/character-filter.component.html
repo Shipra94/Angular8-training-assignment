@@ -1,0 +1,16 @@
+<aside class="filter-wrapper">
+    <h2>
+        Filters
+    </h2>
+    <div *ngFor="let filter of filterLabels |keyvalue" class="filter-comp">
+        <div class="filter-name">
+            <h3>
+                {{filter.key }}
+            </h3>
+            <div *ngFor="let value of filter |keyvalue">
+                <input type="checkbox">
+                <label class="value-label">{{value}}</label>
+            </div>
+        </div>
+    </div>
+</aside>

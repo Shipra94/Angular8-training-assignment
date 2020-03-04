@@ -1,0 +1,38 @@
+<div class="row list-wrapper">
+    <div *ngFor="let character of (characters)" class="col-lg-3 list-layout">
+        <div class="list-header">
+            <img src="{{character.image}}" class="image">
+            <div class="list-name">
+                <div class="name">{{character.name}}</div>
+                <div class="info">
+                    <span>id: {{character.id}}</span>
+                <span>- created {{character.created | createdAt}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="list-body">
+            <div class="body-attribute">
+                <div class="border-bottom attribute">
+                    <span class="attribute-label">STATUS</span>
+                    <span class="attribute-value pull-right">{{character.status}}</span>
+                </div>
+                <div class="border-bottom attribute">
+                    <span class="attribute-label">SPECIES</span>
+                    <span class="attribute-value pull-right">{{character.species}}</span>
+                </div>
+                <div class="border-bottom attribute">
+                    <span class="attribute-label">GENDER</span>
+                    <span class="attribute-value pull-right">{{character.gender}}</span>
+                </div>
+                <div class="border-bottom attribute">
+                    <span class="attribute-label">ORIGIN</span>
+                    <span class="attribute-value pull-right">{{character.origin.name}}</span>
+                </div>
+                <div class="border-bottom attribute">
+                    <span class="attribute-label">LAST LOCATION</span>
+                    <span class="attribute-value pull-right">{{character.location.name}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
